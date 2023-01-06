@@ -9,7 +9,6 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const baseUrl: string | undefined = document.getElementsByTagName('base')[0].getAttribute('href') ?? undefined;
-const rootElement: HTMLElement | null = document.getElementById('root');
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
