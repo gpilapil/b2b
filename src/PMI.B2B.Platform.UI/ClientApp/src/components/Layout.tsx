@@ -4,6 +4,7 @@ import { NavMenu } from './NavMenu';
 
 export class Layout extends Component {
   static displayName = Layout.name;
+  props: { children: any } = { children: null }
 
   render() {
     return (
