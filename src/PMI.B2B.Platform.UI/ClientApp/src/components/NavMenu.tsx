@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import {Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from 'reactstrap';
-import {Link} from 'react-router-dom';
 import './NavMenu.scss';
+import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 export default function NavMenu() {
     const [collapsed, setCollapsed] = useState(false);
@@ -9,24 +8,21 @@ export default function NavMenu() {
         setCollapsed(!collapsed)
     };
     return (
-        <header>
-            <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"
-                    container light>
-                <NavbarBrand tag={Link} to="/">PMI.B2B.Platform.UI</NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2"/>
-                <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!collapsed} navbar>
-                    <ul className="navbar-nav flex-grow">
-                        <NavItem>
-                            <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                        </NavItem>
-                    </ul>
-                </Collapse>
+        <header className='main-header'>
+            <Navbar bg="light" expand="lg">
+                <Container>
+                    <Navbar.Brand href="/">
+                        <img className="max-full-width block" alt="" src='/logo.png'/>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/counter">Counter</Nav.Link>
+                            <Nav.Link href="/fetch-data">Fetch Data</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
             </Navbar>
         </header>
     );

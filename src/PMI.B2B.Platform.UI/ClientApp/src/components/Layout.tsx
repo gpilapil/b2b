@@ -1,12 +1,12 @@
 import React from 'react';
-import {Container} from 'reactstrap';
 import NavMenu from './NavMenu';
+import {Container} from "react-bootstrap";
 
-export default function Layout(props: {children: any}) {
+export default function Layout(props: { children: any }) {
     return (
         <div>
             <NavMenu/>
-            <Container tag="main">
+            <Container>
                 {props.children}
             </Container>
         </div>
