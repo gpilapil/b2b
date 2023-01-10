@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMI.B2B.Platform.UI", "PMI.B2B.Platform.UI\PMI.B2B.Platform.UI.csproj", "{35927590-3CB7-41D4-8D3D-04AD03EF80CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PMI.B2B.Platform.UI", "PMI.B2B.Platform.UI\PMI.B2B.Platform.UI.csproj", "{35927590-3CB7-41D4-8D3D-04AD03EF80CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMI.B2B.Platform.Infrastructure", "PMI.B2B.Platform.Infrastructure\PMI.B2B.Platform.Infrastructure.csproj", "{4C8BD443-F5E8-4274-A2E4-7B2BA59830D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PMI.B2B.Platform.Infrastructure", "PMI.B2B.Platform.Infrastructure\PMI.B2B.Platform.Infrastructure.csproj", "{4C8BD443-F5E8-4274-A2E4-7B2BA59830D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMI.B2B.Platform.Domain", "PMI.B2B.Platform.Domain\PMI.B2B.Platform.Domain.csproj", "{D4FA7C33-64E1-472E-BC96-7EDECD5FE860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PMI.B2B.Platform.Application", "PMI.B2B.Platform.Application\PMI.B2B.Platform.Application.csproj", "{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMI.B2B.Platform.UnitTests", "PMI.B2B.Platform.UnitTests\PMI.B2B.Platform.UnitTests.csproj", "{38A3231C-DA2D-434B-A7BE-C3EAE0364B9E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B418F834-DEA9-4453-A668-52C8545B3204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMI.B2B.Platform.Application", "PMI.B2B.Platform.Application\PMI.B2B.Platform.Application.csproj", "{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PMI.B2B.Platform.Application.UnitTests", "PMI.B2B.Platform.Application.UnitTests\PMI.B2B.Platform.Application.UnitTests.csproj", "{680EFBD6-996B-4DA9-8476-0FBCB32FD0E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,18 +27,14 @@ Global
 		{4C8BD443-F5E8-4274-A2E4-7B2BA59830D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C8BD443-F5E8-4274-A2E4-7B2BA59830D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C8BD443-F5E8-4274-A2E4-7B2BA59830D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4FA7C33-64E1-472E-BC96-7EDECD5FE860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4FA7C33-64E1-472E-BC96-7EDECD5FE860}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4FA7C33-64E1-472E-BC96-7EDECD5FE860}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4FA7C33-64E1-472E-BC96-7EDECD5FE860}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38A3231C-DA2D-434B-A7BE-C3EAE0364B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38A3231C-DA2D-434B-A7BE-C3EAE0364B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38A3231C-DA2D-434B-A7BE-C3EAE0364B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38A3231C-DA2D-434B-A7BE-C3EAE0364B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEE0B4B5-CF8C-4AFD-B3B4-ACEA3DAB30E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680EFBD6-996B-4DA9-8476-0FBCB32FD0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680EFBD6-996B-4DA9-8476-0FBCB32FD0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680EFBD6-996B-4DA9-8476-0FBCB32FD0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680EFBD6-996B-4DA9-8476-0FBCB32FD0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
