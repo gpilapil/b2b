@@ -1,12 +1,18 @@
-import './App.css';
-import { Button } from '@pmi/dsm-react';
+import { Route } from 'react-router-dom';
+import AppRoutes from './AppRoutes';
+import Layout from './shared/Layout';
 
-function App() {
+export default function App() {
   return (
-    <div className="dsm">
-      <Button titleText="Sample Button" variant="accent" />
-    </div>
+    <Layout>
+      {AppRoutes.map((route, index) => {
+        const { element, path, exact } = route;
+        return (
+          <Route key={`k-${index.toString()}`} exact={exact} path={path}>
+            {element}
+          </Route>
+        );
+      })}
+    </Layout>
   );
 }
-
-export default App;
