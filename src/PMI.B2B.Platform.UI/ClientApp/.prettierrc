@@ -1,0 +1,17 @@
+{
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["./src/**/*.css", "./src/**/*.scss"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["./src/**/*.ts", "./src/**/*.tsx"],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
+}

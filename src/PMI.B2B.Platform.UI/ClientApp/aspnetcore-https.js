@@ -1,3 +1,4 @@
+/* eslint no-use-before-define: 0 */
 // This script sets up HTTPS for the application using the ASP.NET Core HTTPS certificate
 const fs = require('fs');
 const spawn = require('child_process').spawn;

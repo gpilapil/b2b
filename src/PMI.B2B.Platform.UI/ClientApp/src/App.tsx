@@ -1,18 +1,18 @@
-import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
-import './custom.scss';
-import Layout from "./components/Layout";
+import Layout from './shared/Layout';
 
 export default function App() {
-    return (
-        <Layout>
-            <Routes>
-                {AppRoutes.map((route, index) => {
-                    const {element, ...rest} = route;
-                    return <Route key={index} {...rest} element={element}/>;
-                })}
-            </Routes>
-        </Layout>
-    );
+  return (
+    <Layout>
+      {AppRoutes.map((route, index) => {
+        const { element, path, exact } = route;
+        return (
+          <Route key={`k-${index.toString()}`} exact={exact} path={path}>
+            {element}
+          </Route>
+        );
+      })}
+    </Layout>
+  );
 }

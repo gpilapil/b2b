@@ -1,21 +1,21 @@
-
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {BrowserRouter} from 'react-router-dom';
-import App from './App';
+import ReactDOM from 'react-dom';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@pmi/dsm-react/dist/assets/styles/styles.scss';
+import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
-import 'bootstrap/dist/css/bootstrap.css';
-
-const baseUrl: string | undefined = document.getElementsByTagName('base')[0].getAttribute('href') ?? undefined;
-const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
-root.render(
-    <BrowserRouter basename={baseUrl}>
-        <App/>
-    </BrowserRouter>);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
