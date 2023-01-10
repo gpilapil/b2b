@@ -1,3 +1,4 @@
+/* eslint no-use-before-define: 0 */
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const { env } = require('process');
 

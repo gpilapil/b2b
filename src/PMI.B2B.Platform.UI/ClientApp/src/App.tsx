@@ -1,17 +1,12 @@
-import React from 'react'
-import './custom.scss'
-import { Route, Routes } from 'react-router-dom'
-import '@pmi/dsm-react/dist/assets/styles/styles.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Home } from './components/Home'
-import { Layout } from './components/Layout'
+import './App.css';
+import { Button } from '@pmi/dsm-react';
 
-export const App = (): JSX.Element => {
+function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path={'/'} element={<Home />} />
-      </Routes>
-    </Layout>
-  )
+    <div className="dsm">
+      <Button titleText="Sample Button" variant="accent" />
+    </div>
+  );
 }
+
+export default App;

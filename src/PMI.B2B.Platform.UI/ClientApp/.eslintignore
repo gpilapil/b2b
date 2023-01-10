@@ -1,0 +1,6 @@
+aspnetcore-https.js
+aspnetcore-react.js
+/src/setupProxy.js
+/src/serviceWorkerRegistration.ts
+/src/service-worker.ts
+/src/reportWebVitals.ts
