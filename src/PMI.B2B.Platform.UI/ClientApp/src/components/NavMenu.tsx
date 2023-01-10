@@ -1,8 +1,8 @@
-import React from 'react';
-import './NavMenu.scss';
-import {Container, Nav, Navbar} from "react-bootstrap";
+import React from 'react'
+import './NavMenu.scss'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 
-export default function NavMenu() {
+export const NavMenu = (): JSX.Element => {
   return (
     <header className='main-header'>
       <Navbar bg="light" expand="lg">
@@ -21,5 +21,5 @@ export default function NavMenu() {
         </Container>
       </Navbar>
     </header>
-  );
+  )
 }

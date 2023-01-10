@@ -1,8 +1,8 @@
-import React from 'react';
-import NavMenu from './NavMenu';
-import {Container} from "react-bootstrap";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import { NavMenu } from './NavMenu'
 
-export default function Layout(props: { children: any }) {
+export const Layout = (props: { children: any }): JSX.Element => {
   return (
     <div>
       <NavMenu />
@@ -10,5 +10,5 @@ export default function Layout(props: { children: any }) {
         {props.children}
       </Container>
     </div>
-  );
+  )
 }

@@ -1,35 +1,29 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "ESNext",
-    "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "allowJs": true,
-    "baseUrl": "src",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "paths": {
-      "*": [
-        "src/*",
-      ]
-    },
+    "target": "es5",
     "lib": [
-      "esnext",
       "dom",
-      "dom.iterable"
+      "dom.iterable",
+      "esnext"
     ],
-    "sourceMap": true,
-    "noImplicitAny": false
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "exclude": [
-    "node_modules",
-    "build"
-  ],
   "include": [
-    "./src"
+    "src"
+  ],
+  "exclude": [
+    "reportWebVitals.ts"
   ]
 }

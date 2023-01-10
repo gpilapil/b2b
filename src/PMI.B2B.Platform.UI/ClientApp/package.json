@@ -40,10 +40,17 @@
     "workbox-streams": "^6.5.4"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
     "ajv": "^8.11.0",
     "cross-env": "^7.0.3",
+    "eslint": "^8.31.0",
+    "eslint-config-standard-with-typescript": "^26.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
     "nan": "^2.16.0",
-    "typescript": "^3.3.1"
+    "typescript": "^4.9.4"
   },
   "overrides": {
     "autoprefixer": "10.4.5"
@@ -61,6 +68,10 @@
     "lint": "eslint ./src/"
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "node_modules/*",
+      "node_modules/**"
+    ],
     "extends": [
       "react-app",
       "react-app/jest"

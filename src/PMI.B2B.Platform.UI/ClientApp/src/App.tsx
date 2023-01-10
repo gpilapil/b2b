@@ -1,19 +1,17 @@
-import React from 'react';
-import './custom.scss';
-import Layout from "./components/Layout";
-import {Route, Routes} from "react-router-dom";
-import Home from "./components/Home";
-import Counter from "./components/Counter";
-import FetchData from "./components/FetchData";
+import React from 'react'
+import './custom.scss'
+import { Route, Routes } from 'react-router-dom'
+import '@pmi/dsm-react/dist/assets/styles/styles.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Home } from './components/Home'
+import { Layout } from './components/Layout'
 
-export default function App() {
+export const App = (): JSX.Element => {
   return (
     <Layout>
       <Routes>
         <Route path={'/'} element={<Home />} />
-        <Route path={'/counter'} element={<Counter />} />
-        <Route path={'/fetch-data'} element={<FetchData />} />
       </Routes>
     </Layout>
-  );
+  )
 }
