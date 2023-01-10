@@ -14,8 +14,6 @@ export const NavMenu = (): JSX.Element => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/counter">Counter</Nav.Link>
-              <Nav.Link href="/fetch-data">Fetch Data</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
